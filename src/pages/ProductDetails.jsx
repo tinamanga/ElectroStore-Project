@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
-import productData from '../data/products.json';
-import '../styles/ProductDetails.css';
+import productData from '../db.json';
+
 
 const ProductDetails = () => {
   const { id } = useParams();

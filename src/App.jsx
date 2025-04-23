@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductList from './pages/ProductList';
 import ProductDetails from './pages/ProductDetails';
-import CartPage from './pages/Cart.jsx';
+import CartPage from './pages/ CartPage.jsx';
+
 
 
 

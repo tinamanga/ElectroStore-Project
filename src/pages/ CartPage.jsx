@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
-import '../styles/Cart.css';
+
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity } = useContext(CartContext);

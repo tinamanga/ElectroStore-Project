@@ -5,28 +5,28 @@
         "name": "Wireless Earbuds",
         "price": 4500,
         "description": "Noise-cancelling earbuds with Bluetooth 5.0.",
-        "image": "https://m.media-amazon.com/images/I/51LmJFMUABL._AC_SL1500_.jpg"
+        "image": "https://i.ebayimg.com/images/g/ImIAAOSwNi5nuriR/s-l1600.webp"
       },
       {
         "id": 2,
         "name": "Smartphone",
         "price": 25000,
         "description": "Latest Android smartphone with triple camera.",
-        "image": "https://www.techadvisor.com/wp-content/uploads/2025/04/best-phones-2025-1.jpg?quality=50&strip=all"
+        "image": "https://m.media-amazon.com/images/I/71kkLVc9BdL._AC_SL1500_.jpg"
       },
       {
         "id": 3,
         "name": "Smartwatch",
         "price": 7500,
         "description": "Fitness tracking and call notification smartwatch.",
-        "image": "https://images.unsplash.com/photo-1670435729578-bed328dbdaf9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "image": "https://www.citypng.com/public/uploads/preview/hd-blue-apple-smart-watch-series-6-png-704081694622170ogfulucxw5.png"
       },
       {
         "id": 4,
         "name": "Laptop",
         "price": 65000,
         "description": "Powerful laptop with 16GB RAM and SSD storage.",
-        "image": "https://cdn.thewirecutter.com/wp-content/media/2023/06/bestlaptops-2048px-9765.jpg?auto=webp&quality=75&width=480&dpr=2"
+        "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300"
       },
       {
         "id": 5,
@@ -96,14 +96,14 @@
         "name": "Digital Camera",
         "price": 15000,
         "description": "High-resolution compact digital camera.",
-        "image": "https://cdn.pixabay.com/photo/2017/08/30/07/52/camera-2691213_1280.jpg"
+        "image": "https://m.media-amazon.com/images/I/71bEYFvV5lL._SL1500_.jpg"
       },
       {
         "id": 15,
         "name": "Router",
         "price": 5000,
         "description": "Dual-band wireless router.",
-        "image": "https://cdn.pixabay.com/photo/2020/05/07/04/17/wifi-router-5138701_1280.jpg"
+        "image": "https://media.istockphoto.com/id/495732397/photo/black-wi-fi-router.jpg?s=612x612&w=is&k=20&c=rFpu60UF8avzNYgAVP-x9LniGwcrYQpjJhBfC7VOzrk="
       },
       {
         "id": 16,
@@ -117,28 +117,28 @@
         "name": "External Hard Drive",
         "price": 6000,
         "description": "2TB USB 3.0 external HDD.",
-        "image": "https://cdn.pixabay.com/photo/2017/01/18/23/56/hard-drive-1999123_1280.jpg"
+        "image": ""
       },
       {
         "id": 18,
         "name": "USB Flash Drive",
         "price": 900,
         "description": "64GB USB 3.0 flash drive.",
-        "image": "https://cdn.pixabay.com/photo/2016/02/25/14/08/usb-1226735_1280.png"
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/007/387/421/small/external-hdd-on-white-background-photo.jpg"
       },
       {
         "id": 19,
         "name": "Car Charger",
         "price": 650,
         "description": "Dual port USB car charger.",
-        "image": "https://cdn.pixabay.com/photo/2021/05/14/15/41/car-charger-6253219_1280.jpg"
+        "image": "https://media.gettyimages.com/id/1412662318/vector/electric-sedan-car-at-the-electro-charger-station.jpg?s=2048x2048&w=gi&k=20&c=flfxDMFLw93VlGbIzWNzELRi0GYHmAA6AOS20JUkYBY="
       },
       {
         "id": 20,
         "name": "Laptop Stand",
         "price": 2300,
         "description": "Adjustable aluminum laptop stand.",
-        "image": "https://cdn.pixabay.com/photo/2021/03/28/15/45/laptop-6133713_1280.jpg"
+        "image": "https://i.ebayimg.com/images/g/EwcAAOSwGG1nXCr7/s-l1600.webp"
       }
     ],
     "users": [
