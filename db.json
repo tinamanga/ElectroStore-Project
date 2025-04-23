@@ -5,211 +5,141 @@
         "name": "Wireless Earbuds",
         "price": 4500,
         "description": "Noise-cancelling earbuds with Bluetooth 5.0.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://m.media-amazon.com/images/I/51LmJFMUABL._AC_SL1500_.jpg"
       },
       {
         "id": 2,
         "name": "Smartphone",
         "price": 25000,
         "description": "Latest Android smartphone with triple camera.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://www.techadvisor.com/wp-content/uploads/2025/04/best-phones-2025-1.jpg?quality=50&strip=all"
       },
       {
         "id": 3,
         "name": "Smartwatch",
         "price": 7500,
         "description": "Fitness tracking and call notification smartwatch.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.unsplash.com/photo-1670435729578-bed328dbdaf9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "id": 4,
         "name": "Laptop",
         "price": 65000,
         "description": "Powerful laptop with 16GB RAM and SSD storage.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://cdn.thewirecutter.com/wp-content/media/2023/06/bestlaptops-2048px-9765.jpg?auto=webp&quality=75&width=480&dpr=2"
       },
       {
         "id": 5,
         "name": "Tablet",
         "price": 18000,
         "description": "10-inch tablet with 4G LTE connectivity.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://cdn.pixabay.com/photo/2014/09/26/22/53/tablet-462950_1280.png"
       },
       {
         "id": 6,
         "name": "Bluetooth Speaker",
         "price": 3200,
         "description": "Portable waterproof Bluetooth speaker.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://www.sencor.com/getmedia/6770caad-d0be-4d0d-b5f0-01bbc4c1c555/35059169.jpg.aspx?width=2100&height=2100&ext=.jpg"
       },
       {
         "id": 7,
         "name": "Power Bank",
         "price": 1500,
         "description": "10000mAh fast-charging power bank.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://www.ultraprolink.com/cdn/shop/products/heroUM1107.jpg?v=1740831303"
       },
       {
         "id": 8,
         "name": "Wireless Mouse",
         "price": 850,
         "description": "Ergonomic wireless mouse with USB receiver.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://img.freepik.com/free-psd/computer-mouse-isolated-transparent-background_191095-18070.jpg?t=st=1745426123~exp=1745429723~hmac=1d496201b2fd153b6d1ac3bfe7d459041a0f79e44aaa490fd20178c462c306c9&w=996"
       },
       {
         "id": 9,
         "name": "Mechanical Keyboard",
         "price": 4500,
         "description": "RGB mechanical gaming keyboard.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://m.media-amazon.com/images/I/61Q54PaGUyL._AC_SL1500_.jpg"
       },
       {
         "id": 10,
         "name": "Smart TV",
         "price": 38000,
         "description": "50-inch 4K UHD Android smart TV.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://www.intex.in/cdn/shop/products/1_9b8014ad-124e-4742-a628-9a4c4affe617_945x.progressive.jpg?v=1648711109"
       },
       {
         "id": 11,
         "name": "VR Headset",
         "price": 12000,
         "description": "Immersive virtual reality headset for games.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://www.istockphoto.com/photo/vr-glasses-isolated-on-white-background-3d-render-gm1067414584-285466572"
       },
       {
         "id": 12,
         "name": "Game Console",
         "price": 45000,
         "description": "Next-gen gaming console with dual controllers.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://stock.adobe.com/images/console-games-and-remote-control-play-computer-games-entertainment-virtual-world/200533351"
       },
       {
         "id": 13,
         "name": "Webcam",
         "price": 2000,
         "description": "1080p webcam with built-in microphone.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://images.seattletimes.com/wp-content/uploads/2018/03/Logitech_C920_Pro_Stream_Webcam_1_164522.jpg?d=780x825"
       },
       {
         "id": 14,
         "name": "Portable Hard Drive",
         "price": 6000,
         "description": "1TB external hard drive for backups.",
-        "image": "https://via.placeholder.com/150"
+        "image":"https://www.shutterstock.com/image-vector/isometric-external-hard-drive-hdd-260nw-791327731.jpg"
       },
       {
         "id": 15,
         "name": "Router",
         "price": 3000,
         "description": "Dual-band WiFi 6 router for fast internet.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://stock.adobe.com/images/wireless-router-on-white-background/1163856773"
       },
       {
         "id": 16,
         "name": "Security Camera",
         "price": 5000,
         "description": "WiFi-enabled indoor security camera.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://sweech.co.ke/wp-content/uploads/2025/01/Tp-Link-Tapo-C500-01-570x570.jpg"
       },
       {
         "id": 17,
         "name": "Electric Kettle",
         "price": 2200,
         "description": "1.7L stainless steel electric kettle.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbI1s-j_uxK2J-6D7plmtM3oKcLUbaX1s7HtatBViJ4vZ6A7xN85qSP4&s"
       },
       {
         "id": 18,
         "name": "Drone",
         "price": 15000,
         "description": "Camera drone with 4K video capability.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://as2.ftcdn.net/v2/jpg/05/32/84/59/1000_F_532845948_aOh6prDheaT1A19qRs2BEQUTXKfyGrO8.webp"
       },
       {
         "id": 19,
         "name": "Smart Bulb",
         "price": 950,
         "description": "WiFi smart bulb with RGB color control.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://media.istockphoto.com/id/166288716/photo/led-lights-bulb.jpg?s=612x612&w=is&k=20&c=9kgAmgbKJgc2L_TUVnSE_p9hF14rc_9YhKApzGyDyGw="
       },
       {
         "id": 20,
         "name": "Portable Projector",
         "price": 17000,
         "description": "Compact projector for home and travel use.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 21,
-        "name": "Smart Thermostat",
-        "price": 8000,
-        "description": "Energy-saving programmable smart thermostat.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 22,
-        "name": "Electric Toothbrush",
-        "price": 2700,
-        "description": "Rechargeable electric toothbrush with timer.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 23,
-        "name": "Fitness Tracker",
-        "price": 5500,
-        "description": "Tracks steps, heart rate, and sleep.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 24,
-        "name": "Car Dash Cam",
-        "price": 3500,
-        "description": "HD dashboard camera with night vision.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 25,
-        "name": "Wireless Charger",
-        "price": 2000,
-        "description": "Qi-certified wireless charging pad.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 26,
-        "name": "Smart Door Lock",
-        "price": 9500,
-        "description": "Keyless smart lock with fingerprint reader.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 27,
-        "name": "Noise Cancelling Headphones",
-        "price": 12000,
-        "description": "Over-ear headphones with ANC and Bluetooth.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 28,
-        "name": "Digital Camera",
-        "price": 38000,
-        "description": "Compact mirrorless digital camera.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 29,
-        "name": "Smart Plug",
-        "price": 1200,
-        "description": "WiFi-enabled smart plug for appliances.",
-        "image": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 30,
-        "name": "Streaming Stick",
-        "price": 4000,
-        "description": "HD streaming stick with voice remote.",
-        "image": "https://via.placeholder.com/150"
+        "image":"https://cdn.mos.cms.futurecdn.net/E9Cn4hw5usgtGJdTjqtx9G-970-80.webp"
       }
     ]
-  }
+}
   
