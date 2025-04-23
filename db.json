@@ -61,7 +61,7 @@
         "name": "Mechanical Keyboard",
         "price": 4500,
         "description": "RGB mechanical gaming keyboard.",
-        "image": "https://m.media-amazon.com/images/I/61Q54PaGUyL._AC_SL1500_.jpg"
+        "image": "https://i.ebayimg.com/images/g/Wm8AAOSw0j1lDeFF/s-l1600.webp"
       },
       {
         "id": 10,
@@ -89,7 +89,7 @@
         "name": "Drone",
         "price": 20000,
         "description": "Quadcopter with 4K camera.",
-        "image": "https://cdn.pixabay.com/photo/2019/11/24/00/42/drone-4649983_1280.jpg"
+        "image": "https://images.unsplash.com/photo-1701120286644-614e6f150296?q=80&w=1009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "id": 14,
@@ -110,14 +110,14 @@
         "name": "Webcam",
         "price": 3200,
         "description": "HD webcam for streaming and video calls.",
-        "image": "https://cdn.pixabay.com/photo/2017/08/07/04/36/monitor-2594966_1280.jpg"
+        "image": "https://m.media-amazon.com/images/I/51GD-1D3ocL._SL1462_.jpg"
       },
       {
         "id": 17,
         "name": "External Hard Drive",
         "price": 6000,
         "description": "2TB USB 3.0 external HDD.",
-        "image": ""
+        "image": "https://media.istockphoto.com/id/1355553177/photo/multiple-storage-devices-data-security.jpg?s=612x612&w=0&k=20&c=MV-GgliMjS0QhVd3Dw1BAjRNUkjOl-vJ0GwhRfT168w="
       },
       {
         "id": 18,
