@@ -1,5 +1,5 @@
 {
-    "electronics": [
+    "products": [
       {
         "id": 1,
         "name": "Wireless Earbuds",
@@ -72,74 +72,140 @@
       },
       {
         "id": 11,
-        "name": "VR Headset",
-        "price": 12000,
-        "description": "Immersive virtual reality headset for games.",
-        "image": "https://www.istockphoto.com/photo/vr-glasses-isolated-on-white-background-3d-render-gm1067414584-285466572"
+        "name": "Gaming Console",
+        "price": 45000,
+        "description": "Next-gen console with 1TB storage.",
+        "image": "https://m.media-amazon.com/images/I/61SnZiCL8PL.jpg"
       },
       {
         "id": 12,
-        "name": "Game Console",
-        "price": 45000,
-        "description": "Next-gen gaming console with dual controllers.",
-        "image": "https://stock.adobe.com/images/console-games-and-remote-control-play-computer-games-entertainment-virtual-world/200533351"
+        "name": "VR Headset",
+        "price": 29900,
+        "description": "Virtual reality headset for immersive gaming.",
+        "image": "https://cdn.pixabay.com/photo/2017/01/31/17/44/vr-2026816_1280.png"
       },
       {
         "id": 13,
-        "name": "Webcam",
-        "price": 2000,
-        "description": "1080p webcam with built-in microphone.",
-        "image": "https://images.seattletimes.com/wp-content/uploads/2018/03/Logitech_C920_Pro_Stream_Webcam_1_164522.jpg?d=780x825"
+        "name": "Drone",
+        "price": 20000,
+        "description": "Quadcopter with 4K camera.",
+        "image": "https://cdn.pixabay.com/photo/2019/11/24/00/42/drone-4649983_1280.jpg"
       },
       {
         "id": 14,
-        "name": "Portable Hard Drive",
-        "price": 6000,
-        "description": "1TB external hard drive for backups.",
-        "image":"https://www.shutterstock.com/image-vector/isometric-external-hard-drive-hdd-260nw-791327731.jpg"
+        "name": "Digital Camera",
+        "price": 15000,
+        "description": "High-resolution compact digital camera.",
+        "image": "https://cdn.pixabay.com/photo/2017/08/30/07/52/camera-2691213_1280.jpg"
       },
       {
         "id": 15,
         "name": "Router",
-        "price": 3000,
-        "description": "Dual-band WiFi 6 router for fast internet.",
-        "image": "https://stock.adobe.com/images/wireless-router-on-white-background/1163856773"
+        "price": 5000,
+        "description": "Dual-band wireless router.",
+        "image": "https://cdn.pixabay.com/photo/2020/05/07/04/17/wifi-router-5138701_1280.jpg"
       },
       {
         "id": 16,
-        "name": "Security Camera",
-        "price": 5000,
-        "description": "WiFi-enabled indoor security camera.",
-        "image": "https://sweech.co.ke/wp-content/uploads/2025/01/Tp-Link-Tapo-C500-01-570x570.jpg"
+        "name": "Webcam",
+        "price": 3200,
+        "description": "HD webcam for streaming and video calls.",
+        "image": "https://cdn.pixabay.com/photo/2017/08/07/04/36/monitor-2594966_1280.jpg"
       },
       {
         "id": 17,
-        "name": "Electric Kettle",
-        "price": 2200,
-        "description": "1.7L stainless steel electric kettle.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbI1s-j_uxK2J-6D7plmtM3oKcLUbaX1s7HtatBViJ4vZ6A7xN85qSP4&s"
+        "name": "External Hard Drive",
+        "price": 6000,
+        "description": "2TB USB 3.0 external HDD.",
+        "image": "https://cdn.pixabay.com/photo/2017/01/18/23/56/hard-drive-1999123_1280.jpg"
       },
       {
         "id": 18,
-        "name": "Drone",
-        "price": 15000,
-        "description": "Camera drone with 4K video capability.",
-        "image": "https://as2.ftcdn.net/v2/jpg/05/32/84/59/1000_F_532845948_aOh6prDheaT1A19qRs2BEQUTXKfyGrO8.webp"
+        "name": "USB Flash Drive",
+        "price": 900,
+        "description": "64GB USB 3.0 flash drive.",
+        "image": "https://cdn.pixabay.com/photo/2016/02/25/14/08/usb-1226735_1280.png"
       },
       {
         "id": 19,
-        "name": "Smart Bulb",
-        "price": 950,
-        "description": "WiFi smart bulb with RGB color control.",
-        "image": "https://media.istockphoto.com/id/166288716/photo/led-lights-bulb.jpg?s=612x612&w=is&k=20&c=9kgAmgbKJgc2L_TUVnSE_p9hF14rc_9YhKApzGyDyGw="
+        "name": "Car Charger",
+        "price": 650,
+        "description": "Dual port USB car charger.",
+        "image": "https://cdn.pixabay.com/photo/2021/05/14/15/41/car-charger-6253219_1280.jpg"
       },
       {
         "id": 20,
-        "name": "Portable Projector",
-        "price": 17000,
-        "description": "Compact projector for home and travel use.",
-        "image":"https://cdn.mos.cms.futurecdn.net/E9Cn4hw5usgtGJdTjqtx9G-970-80.webp"
+        "name": "Laptop Stand",
+        "price": 2300,
+        "description": "Adjustable aluminum laptop stand.",
+        "image": "https://cdn.pixabay.com/photo/2021/03/28/15/45/laptop-6133713_1280.jpg"
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "username": "christina_wm",
+        "email": "christinamanga98@gmail.com",
+        "password": "hashed_pass_123",
+        "address": "00100 Nairobi"
+      },
+      {
+        "id": 2,
+        "username": "tech_guru",
+        "email": "guru@example.com",
+        "password": "hashed_pass_456",
+        "address": "Westlands, Nairobi"
+      }
+    ],
+    "orders": [
+      {
+        "orderId": 301,
+        "userId": 1,
+        "items": [
+          { "productId": 2, "quantity": 1 },
+          { "productId": 10, "quantity": 1 }
+        ],
+        "totalAmount": 63000,
+        "status": "processing",
+        "orderDate": "2025-04-23"
+      },
+      {
+        "orderId": 302,
+        "userId": 2,
+        "items": [
+          { "productId": 4, "quantity": 1 },
+          { "productId": 7, "quantity": 2 }
+        ],
+        "totalAmount": 68000,
+        "status": "delivered",
+        "orderDate": "2025-04-20"
+      }
+    ],
+    "reviews": [
+      {
+        "productId": 2,
+        "userId": 1,
+        "username": "christina_wm",
+        "rating": 5,
+        "comment": "Amazing phone, great camera and fast performance.",
+        "date": "2025-04-22"
+      },
+      {
+        "productId": 4,
+        "userId": 2,
+        "username": "tech_guru",
+        "rating": 4,
+        "comment": "Powerful laptop, but a bit pricey.",
+        "date": "2025-04-21"
+      },
+      {
+        "productId": 10,
+        "userId": 1,
+        "username": "christina_wm",
+        "rating": 5,
+        "comment": "Great 4K display and apps load fast.",
+        "date": "2025-04-23"
       }
     ]
-}
+  }
   
