@@ -66,26 +66,37 @@ In a new terminal:
 
 ## Folder Structure
 
-ElectroStore/
+EDevbuy/
+├── node_modules/                # Installed npm packages
 ├── public/
-│   └── db.json               
+│   └── db.json                  # JSON Server data (products, users, etc.)
 ├── src/
-│   ├── components/
+│   ├── assets/                  
+
+│   │   ├── Cart.css
+│   │   ├── CartPage.css
+│   │   └── ElectroStore.mp4
+│   ├── components/              
+│   │   ├── Cart.jsx
 │   │   ├── Navbar.jsx
 │   │   └── ProductCard.jsx
-│   ├── context/
-│   │   └── CartContext.js
-│   ├── pages/
-│   │   ├── ProductList.jsx
+│   ├── context/                 
+│   ├── pages/                   
+│   │   ├── CartPage.jsx
 │   │   ├── ProductDetails.jsx
-│   │   └── CartPage.jsx
-│   ├── App.js
-│   ├── main.js
-│   └── styles/
-│       └── index.css 
-├── package.json
-├── README.md
-└── .gitignore
+│   │   └── ProductList.jsx
+│   ├── App.css                  
+│   ├── App.jsx                  
+│   ├── index.css                
+│   ├── layout.jsx               
+│   └── main.jsx                 
+├── .gitignore                   
+├── eslint.config.js            
+├── index.html                  
+├── package-lock.json          
+├── package.json                
+├── README.md                   
+└── vite.config.js              
 
 
 

@@ -6,7 +6,8 @@ const ProductDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [related, setRelated] = useState([]);
-  const [cart, setCart] = useState(() => {
+  const [cart, setCart] = useState(() => {  
+   
     // Load from localStorage on initial mount
     const savedCart = localStorage.getItem("cart");
     return savedCart ? JSON.parse(savedCart) : [];
@@ -83,21 +84,7 @@ const ProductDetails = () => {
         />
       </div>
 
-      {/* Related products */}
-      {/* <h3>Related Products</h3>
-      <div className="related-products">
-        {related.map((item) => (
-          <Link
-            to={`/products/${item.id}`}
-            key={item.id}
-            className="related-card"
-          >
-            <img src={item.image} alt={item.name} />
-            <p>{item.name}</p>
-            <span>${item.price.toFixed(2)}</span>
-          </Link>
-        ))}
-      </div> */}
+    
     </div>
   );
 };
