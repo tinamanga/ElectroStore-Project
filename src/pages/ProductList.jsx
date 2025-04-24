@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 
 
 import React, { useEffect, useState } from "react";
 import ProductCard from "../components/card/ProductCard";
+=======
+import React, { useEffect, useState } from "react";
+import ProductCard from "../components/ProductCard";
+>>>>>>> 13b3757482241d4c89707b68f89f31c04c221bb9
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+<<<<<<< HEAD
   const [categoryFilter, setCategoryFilter] = useState("");
   const [sortOption, setSortOption] = useState("");
   const [loading, setLoading] = useState(true);
@@ -53,10 +59,19 @@ const ProductList = () => {
         console.error("Error fetching products:", error);
         setLoading(false);
       }
+=======
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("/db.json"); // Fetch from public directory
+      const data = await response.json();
+      setProducts(data.products);
+>>>>>>> 13b3757482241d4c89707b68f89f31c04c221bb9
     };
     fetchData();
   }, []);
 
+<<<<<<< HEAD
   const categories = [...new Set(products.map((p) => p.category))];
 
   const filteredProducts = products
@@ -135,10 +150,35 @@ const ProductList = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filteredProducts.length ? (
+=======
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  if (!products.length) return <div>Loading...</div>;
+
+  return (
+    <div className="product-list-container">
+      <div className="product-list-header">
+        <h2 className="product-list-title">Our Products</h2>
+
+        <input
+          type="text"
+          className="search-input"
+          placeholder="🔍 Search products..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+
+      <div className="product-grid">
+        {filteredProducts.length > 0 ? (
+>>>>>>> 13b3757482241d4c89707b68f89f31c04c221bb9
           filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))
         ) : (
+<<<<<<< HEAD
           <div className="text-center col-span-full py-12">
             <svg
               className="w-16 h-16 mx-auto text-gray-400"
@@ -156,10 +196,17 @@ const ProductList = () => {
             </svg>
             <p className="text-gray-700 text-lg mt-4">No products found.</p>
           </div>
+=======
+          <p style={{ textAlign: "center" }}>❌ No products found.</p>
+>>>>>>> 13b3757482241d4c89707b68f89f31c04c221bb9
         )}
       </div>
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default ProductList;
+=======
+export default ProductList;
+>>>>>>> 13b3757482241d4c89707b68f89f31c04c221bb9

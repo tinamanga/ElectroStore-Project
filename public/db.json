@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "products": [
       {
         "id": 1,
@@ -209,3 +210,249 @@
     ]
   }
   
+=======
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Earbuds",
+      "price": 4500,
+      "description": "Noise-cancelling earbuds with Bluetooth 5.0.",
+      "image": "https://i.ebayimg.com/images/g/ImIAAOSwNi5nuriR/s-l1600.webp"
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "price": 25000,
+      "description": "Latest Android smartphone with triple camera.",
+      "image": "https://m.media-amazon.com/images/I/71kkLVc9BdL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Smartwatch",
+      "price": 7500,
+      "description": "Fitness tracking and call notification smartwatch.",
+      "image": "https://www.citypng.com/public/uploads/preview/hd-blue-apple-smart-watch-series-6-png-704081694622170ogfulucxw5.png"
+    },
+    {
+      "id": "4",
+      "name": "Laptop",
+      "price": 65000,
+      "description": "Powerful laptop with 16GB RAM and SSD storage.",
+      "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300"
+    },
+    {
+      "id": "5",
+      "name": "Tablet",
+      "price": 18000,
+      "description": "10-inch tablet with 4G LTE connectivity.",
+      "image": "https://cdn.pixabay.com/photo/2014/09/26/22/53/tablet-462950_1280.png"
+    },
+    {
+      "id": "6",
+      "name": "Bluetooth Speaker",
+      "price": 3200,
+      "description": "Portable waterproof Bluetooth speaker.",
+      "image": "https://www.sencor.com/getmedia/6770caad-d0be-4d0d-b5f0-01bbc4c1c555/35059169.jpg.aspx?width=2100&height=2100&ext=.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Power Bank",
+      "price": 1500,
+      "description": "10000mAh fast-charging power bank.",
+      "image": "https://www.ultraprolink.com/cdn/shop/products/heroUM1107.jpg?v=1740831303"
+    },
+    {
+      "id": "8",
+      "name": "Wireless Mouse",
+      "price": 850,
+      "description": "Ergonomic wireless mouse with USB receiver.",
+      "image": "https://img.freepik.com/free-psd/computer-mouse-isolated-transparent-background_191095-18070.jpg?t=st=1745426123~exp=1745429723~hmac=1d496201b2fd153b6d1ac3bfe7d459041a0f79e44aaa490fd20178c462c306c9&w=996"
+    },
+    {
+      "id": "9",
+      "name": "Mechanical Keyboard",
+      "price": 4500,
+      "description": "RGB mechanical gaming keyboard.",
+      "image": "https://i.ebayimg.com/images/g/Wm8AAOSw0j1lDeFF/s-l1600.webp"
+    },
+    {
+      "id": "10",
+      "name": "Smart TV",
+      "price": 38000,
+      "description": "50-inch 4K UHD Android smart TV.",
+      "image": "https://www.intex.in/cdn/shop/products/1_9b8014ad-124e-4742-a628-9a4c4affe617_945x.progressive.jpg?v=1648711109"
+    },
+    {
+      "id": "11",
+      "name": "Gaming Console",
+      "price": 45000,
+      "description": "Next-gen console with 1TB storage.",
+      "image": "https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg"
+    },
+    {
+      "id": "12",
+      "name": "VR Headset",
+      "price": 29900,
+      "description": "Virtual reality headset for immersive gaming.",
+      "image": "https://dealfit.tech/wp-content/uploads/2024/02/OculusQuest2-128Gb-VirtualRealityHeadset-1_400x.webp"
+    },
+    {
+      "id": "13",
+      "name": "Drone",
+      "price": 20000,
+      "description": "Quadcopter with 4K camera.",
+      "image": "https://images.unsplash.com/photo-1701120286644-614e6f150296?q=80&w=1009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "14",
+      "name": "Digital Camera",
+      "price": 15000,
+      "description": "High-resolution compact digital camera.",
+      "image": "https://m.media-amazon.com/images/I/71bEYFvV5lL._SL1500_.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Router",
+      "price": 5000,
+      "description": "Dual-band wireless router.",
+      "image": "https://media.istockphoto.com/id/495732397/photo/black-wi-fi-router.jpg?s=612x612&w=is&k=20&c=rFpu60UF8avzNYgAVP-x9LniGwcrYQpjJhBfC7VOzrk="
+    },
+    {
+      "id": "16",
+      "name": "Webcam",
+      "price": 3200,
+      "description": "HD webcam for streaming and video calls.",
+      "image": "https://m.media-amazon.com/images/I/51GD-1D3ocL._SL1462_.jpg"
+    },
+    {
+      "id": "17",
+      "name": "External Hard Drive",
+      "price": 6000,
+      "description": "2TB USB 3.0 external HDD.",
+      "image": "https://media.istockphoto.com/id/1355553177/photo/multiple-storage-devices-data-security.jpg?s=612x612&w=0&k=20&c=MV-GgliMjS0QhVd3Dw1BAjRNUkjOl-vJ0GwhRfT168w="
+    },
+    {
+      "id": "18",
+      "name": "USB Flash Drive",
+      "price": 900,
+      "description": "64GB USB 3.0 flash drive.",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/007/387/421/small/external-hdd-on-white-background-photo.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Car Charger",
+      "price": 650,
+      "description": "Dual port USB car charger.",
+      "image": "https://media.gettyimages.com/id/1412662318/vector/electric-sedan-car-at-the-electro-charger-station.jpg?s=2048x2048&w=gi&k=20&c=flfxDMFLw93VlGbIzWNzELRi0GYHmAA6AOS20JUkYBY="
+    },
+    {
+      "id": "20",
+      "name": "Laptop Stand",
+      "price": 2300,
+      "description": "Adjustable aluminum laptop stand.",
+      "image": "https://i.ebayimg.com/images/g/EwcAAOSwGG1nXCr7/s-l1600.webp"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "christina_wm",
+      "email": "christinamanga98@gmail.com",
+      "password": "hashed_pass_123",
+      "address": "00100 Nairobi"
+    },
+    {
+      "id": "2",
+      "username": "tech_guru",
+      "email": "guru@example.com",
+      "password": "hashed_pass_456",
+      "address": "Westlands, Nairobi"
+    }
+  ],
+  "orders": [
+    {
+      "orderId": 301,
+      "userId": 1,
+      "items": [
+        {
+          "productId": 2,
+          "quantity": 1
+        },
+        {
+          "productId": 10,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 63000,
+      "status": "processing",
+      "orderDate": "2025-04-23",
+      "id": "2df7"
+    },
+    {
+      "orderId": 302,
+      "userId": 2,
+      "items": [
+        {
+          "productId": 4,
+          "quantity": 1
+        },
+        {
+          "productId": 7,
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 68000,
+      "status": "delivered",
+      "orderDate": "2025-04-20",
+      "id": "07dc"
+    },
+    {
+      "id": "a756",
+      "orderId": 1745495370795,
+      "userId": 1,
+      "items": [],
+      "totalAmount": 0,
+      "status": "processing",
+      "orderDate": "2025-04-24"
+    },
+    {
+      "id": "2bc5",
+      "orderId": 1745496473130,
+      "userId": 1,
+      "items": [],
+      "totalAmount": 0,
+      "status": "processing",
+      "orderDate": "2025-04-24"
+    }
+  ],
+  "reviews": [
+    {
+      "productId": 2,
+      "userId": 1,
+      "username": "christina_wm",
+      "rating": 5,
+      "comment": "Amazing phone, great camera and fast performance.",
+      "date": "2025-04-22",
+      "id": "af6a"
+    },
+    {
+      "productId": 4,
+      "userId": 2,
+      "username": "tech_guru",
+      "rating": 4,
+      "comment": "Powerful laptop, but a bit pricey.",
+      "date": "2025-04-21",
+      "id": "c3aa"
+    },
+    {
+      "productId": 10,
+      "userId": 1,
+      "username": "christina_wm",
+      "rating": 5,
+      "comment": "Great 4K display and apps load fast.",
+      "date": "2025-04-23",
+      "id": "2e8c"
+    }
+  ]
+}
+>>>>>>> 13b3757482241d4c89707b68f89f31c04c221bb9
