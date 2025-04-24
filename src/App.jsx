@@ -6,9 +6,6 @@ import CartPage from './pages/ CartPage.jsx';
 import Navbar from "./components/Navbar"; 
 
 
-
-
-
 function App() {
   return (
     <Router>

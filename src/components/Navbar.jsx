@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav style={styles.nav}>
       <div style={styles.logo}>
         <Link to="/" style={styles.link}>
-          🛒 ElectroStore
+           ElectroStore
         </Link>
       </div>
       <div style={styles.links}>
