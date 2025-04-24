@@ -122,5 +122,35 @@ button:hover {
   margin: 10px 0;
 }
 
-/* Add to cart */
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.related-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.related-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  background: #fafafa;
+}
+
+.related-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
 
