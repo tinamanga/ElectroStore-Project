@@ -1,9 +1,11 @@
 import React from "react";
-import "../assets/Cart.css"
+import "../assets/Cart.css";
 
 const Cart = ({ cartItems, onRemoveItem, onQuantityChange }) => {
   const getTotalPrice = () =>
     cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+
+ 
 
   return (
     <div className="cart-container">
@@ -25,11 +27,16 @@ const Cart = ({ cartItems, onRemoveItem, onQuantityChange }) => {
                       type="number"
                       value={item.quantity}
                       min="1"
-                      onChange={(e) =>
-                        onQuantityChange(item.id, parseInt(e.target.value))
-                      }
+                      onChange={(e) => {
+                        const value = parseInt(e.target.value);
+                        if (!isNaN(value) && value > 0) {
+                          onQuantityChange(item.id, value);
+                        }
+                      }}
                     />
-                    <button onClick={() => onRemoveItem(item.id)}>Remove</button>
+                    <button onClick={() => onRemoveItem(item.id)}>
+                      Remove
+                    </button>
                   </div>
                 </div>
               </div>

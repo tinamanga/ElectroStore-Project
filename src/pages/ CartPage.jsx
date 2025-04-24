@@ -18,14 +18,14 @@ const CartPage = () => {
   };
 
   const handleRemoveItem = (productId) => {
-    const updated = cartItems.filter(item => item.productId !== productId);
+    const updated = cartItems.filter(item => item.id !== productId);
     setCartItems(updated);
     updateLocalStorage(updated);
   };
 
   const handleQuantityChange = (productId, quantity) => {
     const updated = cartItems.map(item =>
-      item.productId === productId ? { ...item, quantity } : item
+      item.id === productId ? { ...item, quantity } : item
     );
     setCartItems(updated);
     updateLocalStorage(updated);
@@ -92,6 +92,7 @@ const CartPage = () => {
         cartItems={cartItems}
         onRemoveItem={handleRemoveItem}
         onQuantityChange={handleQuantityChange}
+
       />
 
       {cartItems.length > 0 && (
