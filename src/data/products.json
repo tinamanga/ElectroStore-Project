@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Earbuds",
+    "price": 4500,
+    "description": "Noise-cancelling earbuds with Bluetooth 5.0.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "price": 25000,
+    "description": "Latest Android smartphone with triple camera.",
+    "image": "https://via.placeholder.com/150"
+  }
+]
+
