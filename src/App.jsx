@@ -4,6 +4,7 @@ import ProductList from './pages/ProductList';
 import ProductDetails from './pages/ProductDetails';
 import CartPage from './pages/ CartPage.jsx';
 import Navbar from "./components/Navbar"; 
+import { Footer } from './layout.jsx';
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<CartPage/>} />
       </Routes>
+      <Footer />
     </Router>
+    
   );
 }
 
