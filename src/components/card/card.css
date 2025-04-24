@@ -1,0 +1,286 @@
+
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-0.5rem) scale(1.05);
+}
+
+
+.badge {
+  position: absolute;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  z-index: 10;
+}
+
+.category-badge {
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.sale-badge {
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+/* Card link */
+.card-link {
+  flex-grow: 1;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  margin-bottom: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background-image: url('https://www.transparenttextures.com/patterns/circuit-board.png');
+  background-size: 200px;
+  background-repeat: repeat;
+ 
+}
+
+
+.loading-spinner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e7eb;
+  animation: pulse 1.5s infinite;
+}
+
+.spinner-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #9ca3af;
+}
+
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.product-image.hidden {
+  opacity: 0;
+}
+
+
+.device-icon {
+  position: absolute;
+  bottom: 0.25rem;
+  right: 0.25rem;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  opacity: 0.75;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+.product-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.stock-status {
+  font-size: 0.75rem;
+  color: #4b5563;
+  margin-top: 0.25rem;
+}
+
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.star {
+  width: 0.875rem;
+  height: 0.875rem;
+  color: #d1d5db;
+}
+
+.star.filled {
+  color: #f59e0b;
+}
+
+.rating-text {
+  font-size: 0.75rem;
+  color: #4b5563;
+  margin-left: 0.5rem;
+}
+
+
+.add-to-cart {
+  margin-top: 0.75rem;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #1e40af;
+}
+
+.add-to-cart:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #3b82f6;
+}
+
+.cart-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .badge {
+    padding: 0.25rem 0.75rem;
+  }
+
+  .category-badge {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .sale-badge {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .image-container {
+    height: 192px;
+  }
+
+  .spinner-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .product-image {
+    padding: 1rem;
+  }
+
+  .device-icon {
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .product-title {
+    font-size: 1.25rem;
+  }
+
+  .product-price {
+    font-size: 1.125rem;
+  }
+
+  .stock-status {
+    font-size: 0.875rem;
+  }
+
+  .star {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .rating-text {
+    font-size: 0.875rem;
+  }
+
+  .add-to-cart {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .cart-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    height: 224px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-container {
+    height: 256px;
+  }
+}
