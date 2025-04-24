@@ -14,7 +14,7 @@ const Navbar = ({ cartCount }) => {
           Home
         </Link>
         <Link to="/cart" className="cart-link" style={styles.link}>
-            Cart{cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+        🛒 Cart{cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
       </div>
     </nav>

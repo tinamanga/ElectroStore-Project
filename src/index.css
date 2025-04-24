@@ -169,3 +169,26 @@ button:hover {
 .cart-link {
   position: relative;
 }
+
+.product-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-list-title {
+  margin: 0;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
