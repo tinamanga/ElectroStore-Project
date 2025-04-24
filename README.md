@@ -47,7 +47,7 @@ ElectroStore is a responsive, modern Single Page Application (SPA) built with Re
 
 
    ### 2.Install Dependencies
-   ```bash
+   
    npm install
 
         ### 3. Run JSON Server
@@ -55,12 +55,12 @@ ElectroStore is a responsive, modern Single Page Application (SPA) built with Re
        npm install -g json-server
         Start the mock API:
 
-    ```bash
+    `
         json-server --watch db.json --port 5000
      ### 4. Start React App
 In a new terminal:
 
-    ```bash
+    
        npm run dev
       The app will run at: http://localhost:5173/
 
@@ -68,7 +68,7 @@ In a new terminal:
 
 ElectroStore/
 ├── public/
-│   └── db.json               # Mock data for json-server
+│   └── db.json               
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx
