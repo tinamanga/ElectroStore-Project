@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import Cart from "../components/Cart";
 
 const ProductDetails = () => {
-
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [related, setRelated] = useState([]);
@@ -28,7 +27,7 @@ const ProductDetails = () => {
     };
 
     fetchProduct();
-  },cart [id]);
+  }, cart[id]);
 
   const handleAddToCart = () => {
     setCart((prevCart) => {
@@ -60,6 +59,9 @@ const ProductDetails = () => {
 
   return (
     <div className="product-details-container">
+      <Link to="/" className="back-button">
+        ← Back to Products
+      </Link>
       <img
         src={product.image}
         alt={product.name}
@@ -71,10 +73,6 @@ const ProductDetails = () => {
         <p>{product.description || "No description available."}</p>
         <button onClick={handleAddToCart}>Add to Cart</button>
       </div>
-
-      <Link to="/" className="back-button">
-        ← Back to Products
-      </Link>
 
       {/* Show Cart */}
       <div style={{ marginTop: "40px" }}>

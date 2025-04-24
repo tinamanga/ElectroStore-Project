@@ -192,3 +192,39 @@ button:hover {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  /* Adds space between the items */
+}
+
+.filter-item {
+  flex: 1 1 100%; /* Default to full width on smaller screens */
+}
+
+@media (min-width: 640px) {
+  .filter-item {
+    flex: 1 1 30%; /* On medium screens, each item takes 30% of the width */
+  }
+}
+
+@media (min-width: 1024px) {
+  .filter-item {
+    flex: 1 1 30%; /* On large screens, each item still takes 30% */
+  }
+}
+
+.filter-input, .filter-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filter-input:focus, .filter-select:focus {
+  outline: none;
+  border-color: #007bff;
+}

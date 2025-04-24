@@ -4,6 +4,7 @@ import ProductList from './pages/ProductList';
 import ProductDetails from './pages/ProductDetails';
 import Navbar from "./components/Navbar"; 
 import { Footer } from './layout.jsx';
+
 import CartPage from './pages/ CartPage.jsx';
 import React, { useState, useEffect } from "react";
 
@@ -46,9 +47,11 @@ const App = () => {
     setCart([]);
     localStorage.removeItem("cart");
   };
+
+  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
   return (
     <Router>
-      <Navbar cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} />
+      <Navbar cartCount={cartCount}/>
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetails />} />
