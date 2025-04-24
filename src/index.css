@@ -154,3 +154,18 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* Cart Badge */
+.cart-badge {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 14px;
+  padding: 2px 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: -18px;
+  right: -30px;
+}
+
+.cart-link {
+  position: relative;
+}

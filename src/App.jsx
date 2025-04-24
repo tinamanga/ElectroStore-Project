@@ -48,7 +48,7 @@ const App = () => {
   };
   return (
     <Router>
-      <Navbar />
+      <Navbar cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} />
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetails />} />

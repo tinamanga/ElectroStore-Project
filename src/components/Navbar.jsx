@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ cartCount }) => {
   return (
     <nav style={styles.nav}>
       <div style={styles.logo}>
@@ -13,9 +13,9 @@ const Navbar = () => {
         <Link to="/" style={styles.link}>
           Home
         </Link>
-        <Link to="/cart" style={styles.link}>
-          Cart
-        </Link>
+        <Link to="/cart" className="cart-link" style={styles.link}>
+            Cart{cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+          </Link>
       </div>
     </nav>
   );
@@ -45,5 +45,6 @@ const styles = {
     fontSize: "1rem",
   },
 };
+
 
 export default Navbar;
