@@ -66,28 +66,31 @@ In a new terminal:
 
 ## Folder Structure
 
-
 ElectroStore/
 ├── public/
+│   └── db.json               # Mock data for json-server
 ├── src/
 │   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── ProductCard.jsx
+│   ├── context/
+│   │   └── CartContext.js
 │   ├── pages/
+│   │   ├── ProductList.jsx
+│   │   ├── ProductDetails.jsx
+│   │   └── CartPage.jsx
 │   ├── App.js
-│   ├── index.js
+│   ├── main.js
 │   └── styles/
-├── db.json
+│       └── index.css 
 ├── package.json
-└── README.md
+├── README.md
+└── .gitignore
 
-### Styling
-Clean and modern layout using CSS Grid and Flexbox
 
-Consistent color palette for excellent UX
-
-Responsive design across devices
 
 ## Author
-      Developed by [Ruler8,tinamanga,Elvis108-coder]
+      Developed by Ruler8,tinamanga,Elvis108-coder
 
 ## License
 This project is licensed under the MIT License.
