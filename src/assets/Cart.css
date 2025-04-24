@@ -63,4 +63,19 @@
     font-size: 18px;
     color: #999;
   }
+
+  .checkout-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #219150;
+  }
+  
   
