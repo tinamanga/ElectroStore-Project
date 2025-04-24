@@ -8,7 +8,7 @@ ElectroStore is a responsive, modern Single Page Application (SPA) built with Re
 
 ##  Project Features
 
-### 🌐 Core Features
+###  Core Features
 -  Display a dynamic catalog of electronic products (smartphones, laptops, accessories, etc.)
 -  View individual product details (images, name, price)
 -  Add products to a shopping cart
@@ -87,7 +87,7 @@ Consistent color palette for excellent UX
 Responsive design across devices
 
 ## Author
-      Developed by [Ruler8,tinamanga,]
+      Developed by [Ruler8,tinamanga,Elvis108-coder]
 
 ## License
 This project is licensed under the MIT License.
