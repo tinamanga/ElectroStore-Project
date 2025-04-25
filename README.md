@@ -40,6 +40,10 @@ ElectroStore is a responsive, modern Single Page Application (SPA) built with Re
 
 ## Getting Started
 
+## Project vedio
+[Download the demo video](src/assets/ElectroStore.mp4)
+
+
 ### 1. Clone the Repository
 ```bash
       git clone https://github.com/your-username/electrostore.git
@@ -87,10 +91,10 @@ ElectroStore/
 ├── README.md
 └── .gitignore
 
-
+## website URL:https://electrostore-project.netlify.app/
 
 ## Author
-      Developed by Ruler8,tinamanga,Elvis108-coder
+      Developed by Ruler8,tinamanga,Elvis108-coder and Ajona
 
 ## License
 This project is licensed under the MIT License.
