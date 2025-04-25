@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import { getProducts } from "../../services/api";
+import { getProducts, deleteProduct } from "../../services/api";
+import Swal from "sweetalert2";
+
 
 export default function ProductTable() {
   const [products, setProducts] = useState([]);
@@ -13,7 +15,36 @@ export default function ProductTable() {
   };
 
   const handleEdit = (id) => alert(`Edit product ${id}`);
-  const handleDelete = (id) => alert(`Delete product ${id}`);
+
+//   Delete product
+  const handleDelete = async (id) => {
+    const result = await Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Yes, delete it!',
+      cancelButtonText: 'No, keep it'
+    });
+
+    if (result.isConfirmed) {
+      try {
+        await deleteProduct(id);
+        setProducts((prevProducts) => prevProducts.filter(product => product.id !== id));
+        Swal.fire(
+          'Deleted!',
+          'The product has been deleted.',
+          'success'
+        );
+      } catch (error) {
+        Swal.fire(
+          'Error!',
+          `There was an error deleting the product due to '${error}`,
+          'error'
+        );
+      }
+    }
+  };
 
   useEffect(() => {
     getProducts().then(setProducts);

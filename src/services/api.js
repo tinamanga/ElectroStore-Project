@@ -22,3 +22,17 @@ export const addProduct = async (productData) => {
     return res.json();
   };
   
+
+//   Delete product
+export const deleteProduct = async (id) => {
+    const res = await fetch(`${API_URL}/products/${id}`, {
+      method: 'DELETE',
+    });
+  
+    if (!res.ok) {
+      throw new Error('Failed to delete product');
+    }
+  
+    return res.json();
+  };
+  
