@@ -17,6 +17,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Products from './pages/dashboard/Products';
 import Orders from './pages/dashboard/Orders';
 import Users from './pages/dashboard/Users';
+import DashboardFooter from './components/dashboard/DashboardFooter'
 
 
 
@@ -96,13 +97,16 @@ const App = () => {
             <div className="flex">
               <Sidebar />
               <div className="flex-1 p-4">
+                
                 <Header />
+                
                 <Routes>
                   <Route path="dashboard" element={<Dashboard />} />
                   <Route path="products" element={<Products />} />
                   <Route path="orders" element={<Orders />} />
                   <Route path="users" element={<Users />} />
                 </Routes>
+                <DashboardFooter />
               </div>
             </div>
           }

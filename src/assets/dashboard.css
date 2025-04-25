@@ -106,6 +106,7 @@
     padding: 1rem;
     border-bottom: 1px solid #e5e7eb;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
   }
   
   /* Cards */
@@ -260,5 +261,40 @@
   
   .dropdown-menu button:hover {
     background-color: #f0f0f0;
+  }
+
+  /* Footer */
+  .dashboard-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .dashboard-footer p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Add product button */
+  .add-product-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; 
+    margin-left: auto;
+    display: block;
+  }
+  
+  .add-product-button:hover {
+    background-color: #45a049;
   }
   
