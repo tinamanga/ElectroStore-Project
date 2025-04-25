@@ -3,15 +3,17 @@
     {
       "id": "1",
       "name": "Wireless Earbuds",
-      "price": 4500,
       "description": "Noise-cancelling earbuds with Bluetooth 5.0.",
+      "price": 4500,
+      "stock": "100",
       "image": "https://i.ebayimg.com/images/g/ImIAAOSwNi5nuriR/s-l1600.webp"
     },
     {
       "id": "2",
       "name": "Smartphone",
-      "price": 25000,
       "description": "Latest Android smartphone with triple camera.",
+      "price": 25000,
+      "stock": "70",
       "image": "https://m.media-amazon.com/images/I/71kkLVc9BdL._AC_SL1500_.jpg"
     },
     {
@@ -19,6 +21,7 @@
       "name": "Smartwatch",
       "price": 7500,
       "description": "Fitness tracking and call notification smartwatch.",
+      "stock": "10",
       "image": "https://www.citypng.com/public/uploads/preview/hd-blue-apple-smart-watch-series-6-png-704081694622170ogfulucxw5.png"
     },
     {
@@ -26,6 +29,7 @@
       "name": "Laptop",
       "price": 65000,
       "description": "Powerful laptop with 16GB RAM and SSD storage.",
+      "stock": "10",
       "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300"
     },
     {
@@ -33,6 +37,7 @@
       "name": "Tablet",
       "price": 18000,
       "description": "10-inch tablet with 4G LTE connectivity.",
+      "stock": "10",
       "image": "https://cdn.pixabay.com/photo/2014/09/26/22/53/tablet-462950_1280.png"
     },
     {
@@ -47,6 +52,7 @@
       "name": "Power Bank",
       "price": 1500,
       "description": "10000mAh fast-charging power bank.",
+      "stock": "10",
       "image": "https://www.ultraprolink.com/cdn/shop/products/heroUM1107.jpg?v=1740831303"
     },
     {
@@ -54,6 +60,7 @@
       "name": "Wireless Mouse",
       "price": 850,
       "description": "Ergonomic wireless mouse with USB receiver.",
+      "stock": "10",
       "image": "https://img.freepik.com/free-psd/computer-mouse-isolated-transparent-background_191095-18070.jpg?t=st=1745426123~exp=1745429723~hmac=1d496201b2fd153b6d1ac3bfe7d459041a0f79e44aaa490fd20178c462c306c9&w=996"
     },
     {
@@ -61,6 +68,7 @@
       "name": "Mechanical Keyboard",
       "price": 4500,
       "description": "RGB mechanical gaming keyboard.",
+      "stock": "10",
       "image": "https://i.ebayimg.com/images/g/Wm8AAOSw0j1lDeFF/s-l1600.webp"
     },
     {
@@ -124,6 +132,7 @@
       "name": "USB Flash Drive",
       "price": 900,
       "description": "64GB USB 3.0 flash drive.",
+      "stock": "10",
       "image": "https://static.vecteezy.com/system/resources/thumbnails/007/387/421/small/external-hdd-on-white-background-photo.jpg"
     },
     {
@@ -131,6 +140,7 @@
       "name": "Car Charger",
       "price": 650,
       "description": "Dual port USB car charger.",
+      "stock": "10",
       "image": "https://media.gettyimages.com/id/1412662318/vector/electric-sedan-car-at-the-electro-charger-station.jpg?s=2048x2048&w=gi&k=20&c=flfxDMFLw93VlGbIzWNzELRi0GYHmAA6AOS20JUkYBY="
     },
     {
@@ -138,7 +148,16 @@
       "name": "Laptop Stand",
       "price": 2300,
       "description": "Adjustable aluminum laptop stand.",
+      "stock": "10",
       "image": "https://i.ebayimg.com/images/g/EwcAAOSwGG1nXCr7/s-l1600.webp"
+    },
+    {
+      "id": "21",
+      "name": "test",
+      "description": "Testing edit",
+      "price": "233",
+      "stock": "10",
+      "image": "https://alamocitygolftrail.com/wp-content/uploads/2022/11/canstockphoto22402523-arcos-creator.com_-1024x1024-1.jpg"
     }
   ],
   "users": [

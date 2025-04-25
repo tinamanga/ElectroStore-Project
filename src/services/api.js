@@ -36,3 +36,21 @@ export const deleteProduct = async (id) => {
     return res.json();
   };
   
+
+//  Edit product
+export const editProduct = async (id, updatedProduct) => {
+    const res = await fetch(`${API_URL}/products/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedProduct),
+    });
+  
+    if (!res.ok) {
+      throw new Error('Failed to update product');
+    }
+  
+    return res.json();
+  };
+  

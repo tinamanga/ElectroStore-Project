@@ -2,10 +2,10 @@ import ProductTable from '../../components/dashboard/ProductTable';
 import { useNavigate } from 'react-router-dom';
 
 export default function Products() {
-    const navigate = useNavigate();  // Hook to navigate to the add product page
+    const navigate = useNavigate(); 
 
     const handleAddProduct = () => {
-      navigate('/admin/products/add');  // Redirect to add product page
+      navigate('/admin/products/add');
     };
   return (
     <div>

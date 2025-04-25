@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { getProducts, deleteProduct } from "../../services/api";
 import Swal from "sweetalert2";
 
@@ -14,7 +15,11 @@ export default function ProductTable() {
     setOpenDropdown(openDropdown === id ? null : id);
   };
 
-  const handleEdit = (id) => alert(`Edit product ${id}`);
+  const navigate = useNavigate();
+
+  const handleEdit = (product) => {
+    navigate("/admin/edit-product", { state: { product } });
+  };
 
 //   Delete product
   const handleDelete = async (id) => {
@@ -108,7 +113,7 @@ export default function ProductTable() {
                   </button>
                   {openDropdown === product.id && (
                     <div className="dropdown-menu">
-                      <button onClick={() => handleEdit(product.id)}>
+                      <button onClick={() => handleEdit(product)}>
                         Edit
                       </button>
                       <button onClick={() => handleDelete(product.id)}>

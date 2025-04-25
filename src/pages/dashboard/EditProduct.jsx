@@ -1,30 +1,23 @@
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React,{ useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { editProduct } from "../../services/api";
 import "../../assets/product.css";
 import Swal from "sweetalert2";
-import { getProducts, addProduct } from "../../services/api";
 
-export default function AddProduct() {
+export default function EditProduct() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { product } = location.state;
 
-  const [products, setProducts] = useState([]);
+  // State to handle form inputs
   const [productData, setProductData] = useState({
-    name: "",
-    description: "",
-    price: "",
-    stock: "",
-    image: "",
+    name: product.name,
+    description: product.description,
+    price: product.price,
+    stock: product.stock,
+    image: product.image,
   });
 
-  // Fetch existing products and calculate new product ID
-  useEffect(() => {
-    getProducts().then(setProducts);
-  }, []);
-
-  const maxId = Math.max(...products.map((product) => parseInt(product.id, 10)));
-  const productId = (maxId + 1).toString();
-
-  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProductData((prevData) => ({
@@ -33,13 +26,11 @@ export default function AddProduct() {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Prepare new product object
-    const newProduct = {
-      id: productId,
+    const updatedProduct = {
+      id: product.id,
       name: productData.name,
       description: productData.description,
       price: productData.price,
@@ -48,26 +39,22 @@ export default function AddProduct() {
     };
 
     try {
-      // Add the product using the addProduct API
-      await addProduct(newProduct);
-
-      // Show success message
+      await editProduct(product.id, updatedProduct);
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Product added successfully",
+        title: "Product updated successfully",
         showConfirmButton: false,
         timer: 3000,
       });
 
-      // Navigate back to the products page after submitting
+      // Navigate back to the products page after updating the product
       navigate("/admin/products");
     } catch (error) {
-      // Handle error
       Swal.fire({
         position: "top-end",
         icon: "error",
-        title: "Failed to add product",
+        title: "Failed to update the product",
         showConfirmButton: false,
         timer: 3000,
       });
@@ -76,7 +63,7 @@ export default function AddProduct() {
 
   return (
     <div className="product-form">
-      <h2>New Product</h2>
+      <h2>Edit Product</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
@@ -137,7 +124,7 @@ export default function AddProduct() {
           />
         </div>
 
-        <button type="submit">Add Product</button>
+        <button type="submit">Update Product</button>
       </form>
     </div>
   );
