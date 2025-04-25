@@ -1,20 +1,30 @@
-// File: src/pages/AddProduct.jsx
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "../../assets/addProducts.css";
+import Swal from "sweetalert2";
+import { getProducts, addProduct } from "../../services/api";
 
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../../assets/addProducts.css'
 export default function AddProduct() {
   const navigate = useNavigate();
 
-  // State to handle form inputs
+  const [products, setProducts] = useState([]);
   const [productData, setProductData] = useState({
-    name: '',
-    description: '',
-    price: '',
-    stock: '',
-    image: '',
+    name: "",
+    description: "",
+    price: "",
+    stock: "",
+    image: "",
   });
 
+  // Fetch existing products and calculate new product ID
+  useEffect(() => {
+    getProducts().then(setProducts);
+  }, []);
+
+  const maxId = Math.max(...products.map((product) => parseInt(product.id, 10)));
+  const productId = (maxId + 1).toString();
+
+  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProductData((prevData) => ({
@@ -23,13 +33,45 @@ export default function AddProduct() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  // Handle form submission
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Normally, you would send this data to the backend here
-    alert('Product Added Successfully!');
 
-    // Navigate back to the products page after submitting the form
-    navigate('/admin/products');
+    // Prepare new product object
+    const newProduct = {
+      id: productId,
+      name: productData.name,
+      description: productData.description,
+      price: productData.price,
+      stock: productData.stock,
+      image: productData.image,
+    };
+
+    try {
+      // Add the product using the addProduct API
+      await addProduct(newProduct);
+
+      // Show success message
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Product added successfully",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+
+      // Navigate back to the products page after submitting
+      navigate("/admin/products");
+    } catch (error) {
+      // Handle error
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "Failed to add product",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    }
   };
 
   return (
