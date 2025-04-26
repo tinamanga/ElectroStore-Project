@@ -1,3 +1,11 @@
+import UsersTable from "../../components/dashboard/UsersTable";
+
 export default function Users() {
-    return <h2>Users Page</h2>;
+    return (
+    <div>
+      <h2>Users Page</h2>
+    <UsersTable />
+    </div>
+    
+  );
   }

@@ -76,3 +76,24 @@ export const deleteOrder = async (id) => {
   
     return res.json();
   };
+
+  export const getUsers = async () => {
+    const res = await fetch(`${API_URL}/users`);
+    return res.json();
+  };
+
+  export const getUser = async (id) => {
+    const res = await fetch(`${API_URL}/users/${id}`);
+    return res.json();
+  };
+  export const deleteUser = async (id) => {
+    const res = await fetch(`${API_URL}/users/${id}`, {
+      method: 'DELETE',
+    });
+  
+    if (!res.ok) {
+      throw new Error('Failed to delete user');
+    }
+  
+    return res.json();
+  };
