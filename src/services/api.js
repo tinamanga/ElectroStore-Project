@@ -5,6 +5,11 @@ export const getProducts = async () => {
   return res.json();
 };
 
+export const getProduct = async (id) => {
+    const res = await fetch(`${API_URL}/products/${id}`);
+    return res.json();
+  };
+
 // Add product to db.json
 export const addProduct = async (productData) => {
     const res = await fetch(`${API_URL}/products`, {

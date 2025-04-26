@@ -17,11 +17,11 @@ export default function OrderTable() {
 
   const navigate = useNavigate();
 
-//   const handleEdit = (product) => {
-//     navigate("/admin/edit-product", { state: { product } });
-//   };
+  const handleView = (order) => {
+    navigate("/admin/view-order", { state: { order } });
+  };
 
-//   Delete product
+//   Delete Order
   const handleDelete = async (id) => {
     const result = await Swal.fire({
       title: 'Are you sure?',
@@ -107,8 +107,8 @@ export default function OrderTable() {
                   </button>
                   {openDropdown === order.id && (
                     <div className="dropdown-menu">
-                      <button onClick={() => handleEdit(order)}>
-                        Edit
+                      <button onClick={() => handleView(order)}>
+                        View
                       </button>
                       <button onClick={() => handleDelete(order.id)}>
                         Delete
