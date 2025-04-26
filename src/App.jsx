@@ -18,6 +18,7 @@ import Products from './pages/dashboard/Products';
 import Orders from './pages/dashboard/Orders';
 import Users from './pages/dashboard/Users';
 import AddUser from './pages/dashboard/AddUser';
+import EditUser from './pages/dashboard/EditUser';
 import DashboardFooter from './components/dashboard/DashboardFooter'
 import AddProduct from './pages/dashboard/AddProduct';
 import EditProduct from './pages/dashboard/EditProduct';
@@ -99,6 +100,7 @@ const App = () => {
                   <Route path="view-order" element={<ViewOrder />} />
                   <Route path="users" element={<Users />} />
                   <Route path="users/add" element={<AddUser />} />
+                  <Route path="users/edit" element={<EditUser />} />
                 </Routes>
                 <DashboardFooter />
               </div>

@@ -45,6 +45,13 @@ export default function UsersTable() {
     }
   };
 
+  const navigate = useNavigate();
+
+  const handleEdit = (user) => {
+    navigate("/admin/users/edit", { state: { user } });
+  };
+
+
   useEffect(() => {
     getUsers().then(setUsers);
   }, []);
@@ -101,8 +108,8 @@ export default function UsersTable() {
                   </button>
                   {openDropdown === user.id && (
                     <div className="dropdown-menu">
-                      <button onClick={() => handleView(user)}>
-                        View
+                      <button onClick={() => handleEdit(user)}>
+                        Update
                       </button>
                       <button onClick={() => handleDelete(user.id)}>
                         Delete

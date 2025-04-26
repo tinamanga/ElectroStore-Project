@@ -114,3 +114,20 @@ export const addUser = async (userData) => {
   
     return res.json();
   };
+
+  export const editUser = async (id, updatedUser) => {
+    const res = await fetch(`${API_URL}/users/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedUser),
+    });
+  
+    if (!res.ok) {
+      throw new Error('Failed to update user');
+    }
+  
+    return res.json();
+  };
+  
