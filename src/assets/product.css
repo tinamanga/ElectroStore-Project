@@ -1,4 +1,4 @@
-.product-form {
+.universal-form {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
@@ -7,30 +7,30 @@
     margin: auto;
   }
   
-  .product-form h2 {
+  .universal-form h2 {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  .product-form .form-group {
+  .universal-form .form-group {
     margin-bottom: 15px;
   }
   
-  .product-form label {
+  .universal-form label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
   }
   
-  .product-form input,
-  .product-form textarea {
+  .universal-form input,
+  .universal-form textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-  .product-form button {
+  .universal-form button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -42,7 +42,7 @@
     width: 100%;
   }
   
-  .product-form button:hover {
+  .universal-form button:hover {
     background-color: #45a049;
   }
   

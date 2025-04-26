@@ -168,6 +168,14 @@
       "email": "christinamanga98@gmail.com",
       "password": "hashed_pass_123",
       "address": "00100 Nairobi"
+    },
+    {
+      "id": "2",
+      "name": "My Name",
+      "username": "gurutech",
+      "email": "gurutech@gmail.com",
+      "password": "12345",
+      "address": "Kajiano North, 3rd Avenue"
     }
   ],
   "orders": [

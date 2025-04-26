@@ -17,6 +17,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Products from './pages/dashboard/Products';
 import Orders from './pages/dashboard/Orders';
 import Users from './pages/dashboard/Users';
+import AddUser from './pages/dashboard/AddUser';
 import DashboardFooter from './components/dashboard/DashboardFooter'
 import AddProduct from './pages/dashboard/AddProduct';
 import EditProduct from './pages/dashboard/EditProduct';
@@ -97,6 +98,7 @@ const App = () => {
                   <Route path="orders" element={<Orders />} />
                   <Route path="view-order" element={<ViewOrder />} />
                   <Route path="users" element={<Users />} />
+                  <Route path="users/add" element={<AddUser />} />
                 </Routes>
                 <DashboardFooter />
               </div>

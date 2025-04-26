@@ -97,3 +97,20 @@ export const deleteOrder = async (id) => {
   
     return res.json();
   };
+
+  // Add user to db.json
+export const addUser = async (userData) => {
+    const res = await fetch(`${API_URL}/users`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(userData),
+    });
+  
+    if (!res.ok) {
+      throw new Error('Failed to add user');
+    }
+  
+    return res.json();
+  };

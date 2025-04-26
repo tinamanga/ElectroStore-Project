@@ -62,7 +62,7 @@ export default function EditProduct() {
   };
 
   return (
-    <div className="product-form">
+    <div className="universal-form">
       <h2>Edit Product</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

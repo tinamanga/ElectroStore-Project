@@ -11,7 +11,7 @@ export default function Products() {
     <div>
       <h2 className="mb-4">Products</h2>
        {/* Add Product Button */}
-       <button className="add-product-button" onClick={handleAddProduct}>
+       <button className="add-button" onClick={handleAddProduct}>
         Add Product
       </button>
       <ProductTable />

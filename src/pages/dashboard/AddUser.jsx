@@ -2,32 +2,32 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../assets/product.css";
 import Swal from "sweetalert2";
-import { getProducts, addProduct } from "../../services/api";
+import {addUser, getUsers } from "../../services/api";
 
-export default function AddProduct() {
+export default function AddUser() {
   const navigate = useNavigate();
 
-  const [products, setProducts] = useState([]);
-  const [productData, setProductData] = useState({
+  const [users, setUsers] = useState([]);
+  const [userData, setUserData] = useState({
     name: "",
-    description: "",
-    price: "",
-    stock: "",
-    image: "",
+    username: "",
+    email: "",
+    password: "",
+    address: "",
   });
 
   // Fetch existing products and calculate new product ID
   useEffect(() => {
-    getProducts().then(setProducts);
+    getUsers().then(setUsers);
   }, []);
 
-  const maxId = Math.max(...products.map((product) => parseInt(product.id, 10)));
-  const productId = (maxId + 1).toString();
+  const maxId = Math.max(...users.map((user) => parseInt(user.id, 10)));
+  const userId = (maxId + 1).toString();
 
   // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setProductData((prevData) => ({
+    setUserData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
@@ -38,36 +38,36 @@ export default function AddProduct() {
     e.preventDefault();
 
     // Prepare new product object
-    const newProduct = {
-      id: productId,
-      name: productData.name,
-      description: productData.description,
-      price: productData.price,
-      stock: productData.stock,
-      image: productData.image,
+    const newUser = {
+      id: userId,
+      name: userData.name,
+      username: userData.username,
+      email: userData.email,
+      password: userData.password,
+      address: userData.address,
     };
 
     try {
       // Add the product using the addProduct API
-      await addProduct(newProduct);
+      await addUser(newUser);
 
       // Show success message
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Product added successfully",
+        title: "User added successfully",
         showConfirmButton: false,
         timer: 3000,
       });
 
-      // Navigate back to the products page after submitting
-      navigate("/admin/products");
+      // Navigate back to the users page after submitting
+      navigate("/admin/users");
     } catch (error) {
       // Handle error
       Swal.fire({
         position: "top-end",
         icon: "error",
-        title: "Failed to add product",
+        title: "Failed to add User",
         showConfirmButton: false,
         timer: 3000,
       });
@@ -76,7 +76,7 @@ export default function AddProduct() {
 
   return (
     <div className="universal-form">
-      <h2>New Product</h2>
+      <h2>New User</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
@@ -84,60 +84,60 @@ export default function AddProduct() {
             type="text"
             id="name"
             name="name"
-            value={productData.name}
+            value={userData.name}
             onChange={handleChange}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="description">Description</label>
+          <label htmlFor="username">Username</label>
           <textarea
-            id="description"
-            name="description"
-            value={productData.description}
+            id="username"
+            name="username"
+            value={userData.username}
             onChange={handleChange}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="price">Price</label>
+          <label htmlFor="email">email</label>
           <input
-            type="number"
-            id="price"
-            name="price"
-            value={productData.price}
+            type="email"
+            id="email"
+            name="email"
+            value={userData.email}
             onChange={handleChange}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="stock">Stock</label>
+          <label htmlFor="password">Password</label>
           <input
-            type="number"
-            id="stock"
-            name="stock"
-            value={productData.stock}
+            type="password"
+            id="password"
+            name="password"
+            value={userData.password}
             onChange={handleChange}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="image">Image URL</label>
+          <label htmlFor="address">User Address</label>
           <input
             type="text"
-            id="image"
-            name="image"
-            value={productData.image}
+            id="address"
+            name="address"
+            value={userData.address}
             onChange={handleChange}
             required
           />
         </div>
 
-        <button type="submit">Add Product</button>
+        <button type="submit">Add User</button>
       </form>
     </div>
   );
