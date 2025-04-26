@@ -1,3 +1,10 @@
+import OrderTable from "../../components/dashboard/OrderTable";
 export default function Orders() {
-    return <h2>Orders Page</h2>;
+    return (
+        <div>
+            <h2>Orders Page</h2>
+            <OrderTable />
+        </div>
+    
+);
   }
