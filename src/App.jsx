@@ -1,30 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProductList from "./pages/ProductList";
+import ProductDetails from "./pages/ProductDetails";
+import Navbar from "./components/Navbar";
+import { Footer } from "./layout.jsx";
+import "./assets/dashboard.css";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ProductList from './pages/ProductList';
-import ProductDetails from './pages/ProductDetails';
-import Navbar from "./components/Navbar"; 
-import { Footer } from './layout.jsx';
-import "./assets/dashboard.css"
-
-
-import CartPage from './pages/ CartPage.jsx';
+import CartPage from "./pages/ CartPage.jsx";
 import React, { useState, useEffect } from "react";
 
 // Dashboard imports
-import Sidebar from './components/dashboard/Sidebar';
-import Header from './components/dashboard/Navbar';
-import Dashboard from './pages/dashboard/Dashboard';
-import Products from './pages/dashboard/Products';
-import Orders from './pages/dashboard/Orders';
-import Users from './pages/dashboard/Users';
-import AddUser from './pages/dashboard/AddUser';
-import EditUser from './pages/dashboard/EditUser';
-import DashboardFooter from './components/dashboard/DashboardFooter'
-import AddProduct from './pages/dashboard/AddProduct';
-import EditProduct from './pages/dashboard/EditProduct';
-import ViewOrder from './pages/dashboard/ViewOrder';
-
-
+import Sidebar from "./components/dashboard/Sidebar";
+import Header from "./components/dashboard/Navbar";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Products from "./pages/dashboard/Products";
+import Orders from "./pages/dashboard/Orders";
+import Users from "./pages/dashboard/Users";
+import AddUser from "./pages/dashboard/AddUser";
+import EditUser from "./pages/dashboard/EditUser";
+import DashboardFooter from "./components/dashboard/DashboardFooter";
+import AddProduct from "./pages/dashboard/AddProduct";
+import EditProduct from "./pages/dashboard/EditProduct";
+import ViewOrder from "./pages/dashboard/ViewOrder";
 
 const App = () => {
   const [cart, setCart] = useState(() => {
@@ -85,23 +81,31 @@ const App = () => {
         <Route
           path="/admin/*"
           element={
-            <div className="flex">
+            <div className="flex min-h-screen">
+              {/* Sidebar stays on the left */}
               <Sidebar />
-              <div className="flex-1 p-4">
-                
+
+              {/* Right side: Header + Main content + Footer */}
+              <div className="flex-1 flex flex-col">
+                {/* Header with no gap above and flush with sidebar */}
                 <Header />
-                
-                <Routes>
-                  <Route path="dashboard" element={<Dashboard />} />
-                  <Route path="products" element={<Products />} />
-                  <Route path="products/add" element={<AddProduct />} />
-                  <Route path="edit-product" element={<EditProduct />} />
-                  <Route path="orders" element={<Orders />} />
-                  <Route path="view-order" element={<ViewOrder />} />
-                  <Route path="users" element={<Users />} />
-                  <Route path="users/add" element={<AddUser />} />
-                  <Route path="users/edit" element={<EditUser />} />
-                </Routes>
+
+                {/* Main content */}
+                <div className="flex-1 p-4">
+                  <Routes>
+                    <Route path="dashboard" element={<Dashboard />} />
+                    <Route path="products" element={<Products />} />
+                    <Route path="products/add" element={<AddProduct />} />
+                    <Route path="edit-product" element={<EditProduct />} />
+                    <Route path="orders" element={<Orders />} />
+                    <Route path="view-order" element={<ViewOrder />} />
+                    <Route path="users" element={<Users />} />
+                    <Route path="users/add" element={<AddUser />} />
+                    <Route path="users/edit" element={<EditUser />} />
+                  </Routes>
+                </div>
+
+                {/* Footer */}
                 <DashboardFooter />
               </div>
             </div>
@@ -110,6 +114,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;

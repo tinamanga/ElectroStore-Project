@@ -11,7 +11,7 @@ export default function Users() {
     <div>
       <h2>Users</h2>
       <button className="add-button" onClick={handleAddUser}>
-        Add Product
+        Add User
       </button>
     <UsersTable />
     </div>

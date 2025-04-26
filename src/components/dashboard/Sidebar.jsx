@@ -1,15 +1,36 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Sidebar() {
-    return (
-        <aside>
-          <h2>Admin Panel</h2>
-          <nav>
-            <Link to="/admin/dashboard">Dashboard</Link>
-            <Link to="/admin/products">Products</Link>
-            <Link to="/admin/orders">Orders</Link>
-            <Link to="/admin/users">Users</Link>
-          </nav>
-        </aside>
-      );
-    }
+  return (
+    <aside className="sidebar">
+      <h2 className="sidebar-title">ElectroStore</h2>
+      <div className="sidebar-separator"></div>
+      <nav className="sidebar-nav">
+        <NavLink 
+          to="/admin/dashboard" 
+          className={({ isActive }) => isActive ? "active-link" : ""}
+        >
+          Dashboard
+        </NavLink>
+        <NavLink 
+          to="/admin/products" 
+          className={({ isActive }) => isActive ? "active-link" : ""}
+        >
+          Products
+        </NavLink>
+        <NavLink 
+          to="/admin/orders" 
+          className={({ isActive }) => isActive ? "active-link" : ""}
+        >
+          Orders
+        </NavLink>
+        <NavLink 
+          to="/admin/users" 
+          className={({ isActive }) => isActive ? "active-link" : ""}
+        >
+          Users
+        </NavLink>
+      </nav>
+    </aside>
+  );
+}
