@@ -3,15 +3,17 @@
     {
       "id": "1",
       "name": "Wireless Earbuds",
-      "price": 4500,
       "description": "Noise-cancelling earbuds with Bluetooth 5.0.",
+      "price": 4500,
+      "stock": "100",
       "image": "https://i.ebayimg.com/images/g/ImIAAOSwNi5nuriR/s-l1600.webp"
     },
     {
       "id": "2",
       "name": "Smartphone",
-      "price": 25000,
       "description": "Latest Android smartphone with triple camera.",
+      "price": 25000,
+      "stock": "70",
       "image": "https://m.media-amazon.com/images/I/71kkLVc9BdL._AC_SL1500_.jpg"
     },
     {
@@ -19,13 +21,15 @@
       "name": "Smartwatch",
       "price": 7500,
       "description": "Fitness tracking and call notification smartwatch.",
-      "image": "https://www.citypng.com/public/uploads/preview/hd-blue-apple-smart-watch-series-6-png-704081694622170ogfulucxw5.png"
+      "stock": "10",
+      "image": "https://kospet.com/cdn/shop/files/homepage-tank-m3-ultra-smartwatch-card-min.webp?v=1743420356&width=1200"
     },
     {
       "id": "4",
       "name": "Laptop",
       "price": 65000,
       "description": "Powerful laptop with 16GB RAM and SSD storage.",
+      "stock": "10",
       "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300"
     },
     {
@@ -33,6 +37,7 @@
       "name": "Tablet",
       "price": 18000,
       "description": "10-inch tablet with 4G LTE connectivity.",
+      "stock": "10",
       "image": "https://cdn.pixabay.com/photo/2014/09/26/22/53/tablet-462950_1280.png"
     },
     {
@@ -47,6 +52,7 @@
       "name": "Power Bank",
       "price": 1500,
       "description": "10000mAh fast-charging power bank.",
+      "stock": "10",
       "image": "https://www.ultraprolink.com/cdn/shop/products/heroUM1107.jpg?v=1740831303"
     },
     {
@@ -54,6 +60,7 @@
       "name": "Wireless Mouse",
       "price": 850,
       "description": "Ergonomic wireless mouse with USB receiver.",
+      "stock": "10",
       "image": "https://img.freepik.com/free-psd/computer-mouse-isolated-transparent-background_191095-18070.jpg?t=st=1745426123~exp=1745429723~hmac=1d496201b2fd153b6d1ac3bfe7d459041a0f79e44aaa490fd20178c462c306c9&w=996"
     },
     {
@@ -61,6 +68,7 @@
       "name": "Mechanical Keyboard",
       "price": 4500,
       "description": "RGB mechanical gaming keyboard.",
+      "stock": "10",
       "image": "https://i.ebayimg.com/images/g/Wm8AAOSw0j1lDeFF/s-l1600.webp"
     },
     {
@@ -124,6 +132,7 @@
       "name": "USB Flash Drive",
       "price": 900,
       "description": "64GB USB 3.0 flash drive.",
+      "stock": "10",
       "image": "https://static.vecteezy.com/system/resources/thumbnails/007/387/421/small/external-hdd-on-white-background-photo.jpg"
     },
     {
@@ -131,6 +140,7 @@
       "name": "Car Charger",
       "price": 650,
       "description": "Dual port USB car charger.",
+      "stock": "10",
       "image": "https://media.gettyimages.com/id/1412662318/vector/electric-sedan-car-at-the-electro-charger-station.jpg?s=2048x2048&w=gi&k=20&c=flfxDMFLw93VlGbIzWNzELRi0GYHmAA6AOS20JUkYBY="
     },
     {
@@ -138,23 +148,34 @@
       "name": "Laptop Stand",
       "price": 2300,
       "description": "Adjustable aluminum laptop stand.",
+      "stock": "10",
       "image": "https://i.ebayimg.com/images/g/EwcAAOSwGG1nXCr7/s-l1600.webp"
+    },
+    {
+      "id": "21",
+      "name": "test",
+      "description": "Testing edit",
+      "price": "233",
+      "stock": "10",
+      "image": "https://alamocitygolftrail.com/wp-content/uploads/2022/11/canstockphoto22402523-arcos-creator.com_-1024x1024-1.jpg"
     }
   ],
   "users": [
     {
       "id": "1",
-      "username": "christina_wm",
+      "name": "Dev Christina",
+      "username": "christina_wmmm",
       "email": "christinamanga98@gmail.com",
       "password": "hashed_pass_123",
       "address": "00100 Nairobi"
     },
     {
       "id": "2",
-      "username": "tech_guru",
-      "email": "guru@example.com",
-      "password": "hashed_pass_456",
-      "address": "Westlands, Nairobi"
+      "name": "My Name",
+      "username": "gurutech",
+      "email": "gurutech@gmail.com",
+      "password": "12345",
+      "address": "Kajiano North, 3rd Avenue"
     }
   ],
   "orders": [
@@ -193,24 +214,6 @@
       "status": "delivered",
       "orderDate": "2025-04-20",
       "id": "07dc"
-    },
-    {
-      "id": "a756",
-      "orderId": 1745495370795,
-      "userId": 1,
-      "items": [],
-      "totalAmount": 0,
-      "status": "processing",
-      "orderDate": "2025-04-24"
-    },
-    {
-      "id": "2bc5",
-      "orderId": 1745496473130,
-      "userId": 1,
-      "items": [],
-      "totalAmount": 0,
-      "status": "processing",
-      "orderDate": "2025-04-24"
     },
     {
       "id": "a05e",
@@ -256,6 +259,79 @@
       "totalAmount": 0,
       "status": "processing",
       "orderDate": "2025-04-24"
+    },
+    {
+      "id": "bce1",
+      "orderId": 1745623911090,
+      "userId": 1,
+      "items": [],
+      "totalAmount": 0,
+      "status": "processing",
+      "orderDate": "2025-04-25"
+    },
+    {
+      "id": "b5a1",
+      "orderId": 1745624589916,
+      "userId": 1,
+      "items": [
+        {
+          "productId": "1",
+          "quantity": 3
+        },
+        {
+          "productId": "3",
+          "quantity": 3
+        }
+      ],
+      "totalAmount": 36000,
+      "status": "processing",
+      "orderDate": "2025-04-25"
+    },
+    {
+      "id": "6de1",
+      "orderId": 1745624876094,
+      "userId": 1,
+      "items": [
+        {
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "productId": "19",
+          "quantity": 5
+        }
+      ],
+      "totalAmount": 28250,
+      "status": "processing",
+      "orderDate": "2025-04-25T23:47:56.094Z"
+    },
+    {
+      "id": "93d2",
+      "orderId": 1745624949645,
+      "userId": 1,
+      "items": [
+        {
+          "productId": "4",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 65000,
+      "status": "processing",
+      "orderDate": "2025-04-26"
+    },
+    {
+      "id": "4a71",
+      "orderId": 1745770247582,
+      "userId": 1,
+      "items": [
+        {
+          "productId": "1",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 4500,
+      "status": "processing",
+      "orderDate": "2025-04-27"
     }
   ],
   "reviews": [

@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21295c;
+    color: #fff;
+    padding: 1.3rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .navbar-title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .user-section {
+    position: relative;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .user-info svg {
+    font-size: 24px;
+  }
+  
+  .username {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: 3.2rem;
+    background-color: #21295c;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-width: 140px;
+    z-index: 10;
+  }
+  
+  .dropdown-item {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    text-align: left;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #1f2937;
+  }
+  

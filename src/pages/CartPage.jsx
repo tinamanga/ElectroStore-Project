@@ -51,7 +51,7 @@ const CartPage = () => {
     let totalAmount = 0;
 
     cartItems.forEach(item => {
-      const product = products.find(p => p.id === item.productId);
+      const product = products.find(p => p.id === item.id);
       if (product) {
         orderItems.push({
           productId: product.id,
@@ -67,7 +67,7 @@ const CartPage = () => {
       items: orderItems,
       totalAmount,
       status: "processing",
-      orderDate: new Date().toISOString().split("T")[0]
+      orderDate: new Date().toLocaleDateString("en-CA")
     };
 
     await fetch("http://localhost:5000/orders", {
