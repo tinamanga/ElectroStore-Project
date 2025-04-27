@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import { Footer } from "./layout.jsx";
 import "./assets/dashboard.css";
 
-import CartPage from "./pages/ CartPage.jsx";
+import CartPage from "./pages/CartPage.jsx";
 import React, { useState, useEffect } from "react";
 
 // Dashboard imports
