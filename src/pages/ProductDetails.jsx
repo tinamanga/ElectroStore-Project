@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import Swal from 'sweetalert2';
 import Cart from "../components/Cart";
 
 const ProductDetails = () => {
@@ -33,12 +34,29 @@ const ProductDetails = () => {
     setCart((prevCart) => {
       const existing = prevCart.find((item) => item.id === product.id);
       if (existing) {
+        Swal.fire({
+          position: "top-end",
+          icon: 'success',
+          title: 'Updated!',
+          text: `${product.name} quantity increased in your cart.`,
+          timer: 1500,
+          showConfirmButton: false,
+        });
         return prevCart.map((item) =>
           item.id === product.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       }
+  
+      Swal.fire({
+        icon: 'success',
+        title: 'Added to Cart!',
+        text: `${product.name} has been added to your cart.`,
+        timer: 1500,
+        showConfirmButton: false,
+      });
+  
       return [...prevCart, { ...product, quantity: 1 }];
     });
   };

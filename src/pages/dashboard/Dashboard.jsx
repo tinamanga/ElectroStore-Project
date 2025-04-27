@@ -23,7 +23,6 @@ export default function Dashboard() {
     <div>
       <StatsCards stats={stats} />
       <h2>Overview</h2>
-      <p>Welcome to your store dashboard.</p>
       <StatsCharts />
     </div>
   );

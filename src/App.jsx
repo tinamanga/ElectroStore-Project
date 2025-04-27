@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductList from "./pages/ProductList";
 import ProductDetails from "./pages/ProductDetails";
 import Navbar from "./components/Navbar";
-import { Footer } from "./layout.jsx";
+import  Footer  from "./components/Footer";
 import "./assets/dashboard.css";
 
 import CartPage from "./pages/ CartPage.jsx";

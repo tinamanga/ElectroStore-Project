@@ -164,7 +164,7 @@
     {
       "id": "1",
       "name": "Dev Christina",
-      "username": "christina_wmmm",
+      "username": "christina_w",
       "email": "christinamanga98@gmail.com",
       "password": "hashed_pass_123",
       "address": "00100 Nairobi"
@@ -318,6 +318,24 @@
       "totalAmount": 65000,
       "status": "processing",
       "orderDate": "2025-04-26"
+    },
+    {
+      "id": "43f9",
+      "orderId": 1745774088107,
+      "userId": 1,
+      "items": [
+        {
+          "productId": "3",
+          "quantity": 5
+        },
+        {
+          "productId": "4",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 102500,
+      "status": "processing",
+      "orderDate": "2025-04-27"
     }
   ],
   "reviews": [
