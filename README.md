@@ -42,6 +42,7 @@ ElectroStore is a responsive, modern Single Page Application (SPA) built with Re
 
 ## Project vedio
 [Download the demo video](src/assets/ElectroStore.mp4)
+[Download the demo video](src/assets/electrostoreDashbord.mp4)
 
 
 ### 1. Clone the Repository
@@ -72,24 +73,44 @@ In a new terminal:
 
 ElectroStore/
 ├── public/
-│   └── db.json               
+│   └── db.json
+│
 ├── src/
+│   ├── assets/
+│   │   ├── electrostore.mp4
+│   │   ├── electrostore dashboard.mp4
+│   │   ├── cart.css
+│   │   ├── cartpage.css
+│   │   ├── dashboard.css
+│   │   ├── navbar.css
+│   │   └── product.css
+│
 │   ├── components/
-│   │   ├── Navbar.jsx
-│   │   └── ProductCard.jsx
-│   ├── context/
-│   │   └── CartContext.js
+│   │   ├── CartContext.jsx
+│   │   ├── dashboard/
+│   │   │   ├── Cart.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Footer.jsx
+│   │   │   └── ProductCard.jsx
+│
 │   ├── pages/
-│   │   ├── ProductList.jsx
-│   │   ├── ProductDetails.jsx
-│   │   └── CartPage.jsx
-│   ├── App.js
-│   ├── main.js
-│   └── styles/
-│       └── index.css 
+│   │   └── dashboard/
+│   │       ├── CartPage.jsx
+│   │       ├── ProductDetails.jsx
+│   │       └── ProductList.jsx
+│
+│   ├── services/
+│   │   └── API.jsx
+│
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
 ├── package.json
 ├── README.md
 └── .gitignore
+
 
 ## website URL:https://electrostore-project.netlify.app/
 
