@@ -1,12 +1,22 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
     addToCart(product);
+  
+    Swal.fire({
+      position: "top-end",
+      icon: 'success',
+      title: 'Added to Cart!',
+      text: `${product.name} has been added to your cart.`,
+      timer: 1500,
+      showConfirmButton: false,
+    });
   };
 
   return (

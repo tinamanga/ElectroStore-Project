@@ -73,32 +73,6 @@ const ProductList = () => {
 
   if (!products.length) return <div>Loading...</div>;
 
-  //   return (
-  //     <div className="product-list-container">
-  //       <div className="product-list-header">
-  //         <h2 className="product-list-title">Our Products</h2>
-
-  //         <input
-  //           type="text"
-  //           className="search-input"
-  //           placeholder="🔍 Search products..."
-  //           value={searchTerm}
-  //           onChange={(e) => setSearchTerm(e.target.value)}
-  //         />
-  //       </div>
-
-  //       <div className="product-grid">
-  //         {filteredProducts.length > 0 ? (
-  //           filteredProducts.map((product) => (
-  //             <ProductCard key={product.id} product={product} />
-  //           ))
-  //         ) : (
-  //           <p style={{ textAlign: "center" }}>❌ No products found.</p>
-  //         )}
-  //       </div>
-  //     </div>
-  //   );
-
   return (
     <div className="container mx-auto p-6 bg-gradient-to-b from-gray-50 to-gray-100 min-h-screen">
       <div className="flex items-center gap-3 mb-6">

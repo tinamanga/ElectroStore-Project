@@ -28,7 +28,7 @@ export default function StatsCharts() {
     datasets: [
       {
         label: 'Total Sales (Ksh)',
-        data: [800, 1300, 950, 1500, 1100, 5200],
+        data: [0, 0, 0, 362750, 0, 0],
         backgroundColor: '#4CAF50',
       },
     ],
